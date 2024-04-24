@@ -4,7 +4,7 @@
  */
 package view;
 
-import view.Cadastro;
+import view.CadCliVIEW;
 import javax.swing.JOptionPane;
 
 public class Menu extends javax.swing.JFrame {
@@ -30,8 +30,8 @@ public class Menu extends javax.swing.JFrame {
         pnTitulo_Menu = new javax.swing.JPanel();
         lblTitulo_Menu = new javax.swing.JLabel();
         btnCadastro_Menu = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         btnSobre_Menu = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         btnCadastro_Menu1.setBackground(new java.awt.Color(102, 102, 102));
         btnCadastro_Menu1.setForeground(new java.awt.Color(255, 255, 255));
@@ -58,7 +58,7 @@ public class Menu extends javax.swing.JFrame {
         pnTitulo_Menu.setLayout(pnTitulo_MenuLayout);
         pnTitulo_MenuLayout.setHorizontalGroup(
             pnTitulo_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitulo_Menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 637, Short.MAX_VALUE)
+            .addComponent(lblTitulo_Menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnTitulo_MenuLayout.setVerticalGroup(
             pnTitulo_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -77,8 +77,6 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monstrinho/monstrobolso.jpg"))); // NOI18N
-
         btnSobre_Menu.setBackground(new java.awt.Color(102, 102, 102));
         btnSobre_Menu.setForeground(new java.awt.Color(255, 255, 255));
         btnSobre_Menu.setText("Sobre o projeto");
@@ -88,32 +86,36 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/monstrobolso.jpg"))); // NOI18N
+
         javax.swing.GroupLayout pnFundo_MenuLayout = new javax.swing.GroupLayout(pnFundo_Menu);
         pnFundo_Menu.setLayout(pnFundo_MenuLayout);
         pnFundo_MenuLayout.setHorizontalGroup(
             pnFundo_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnTitulo_Menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnFundo_MenuLayout.createSequentialGroup()
-                .addGap(60, 60, 60)
+                .addGap(73, 73, 73)
                 .addGroup(pnFundo_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnCadastro_Menu)
                     .addComponent(btnSobre_Menu))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(30, 30, 30))
+                .addGap(45, 45, 45))
         );
         pnFundo_MenuLayout.setVerticalGroup(
             pnFundo_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnFundo_MenuLayout.createSequentialGroup()
                 .addComponent(pnTitulo_Menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74)
-                .addGroup(pnFundo_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1)
+                .addGroup(pnFundo_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnFundo_MenuLayout.createSequentialGroup()
+                        .addGap(115, 115, 115)
                         .addComponent(btnCadastro_Menu)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSobre_Menu)))
-                .addContainerGap(92, Short.MAX_VALUE))
+                        .addGap(70, 70, 70)
+                        .addComponent(btnSobre_Menu))
+                    .addGroup(pnFundo_MenuLayout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(jLabel1)))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -131,7 +133,7 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCadastro_MenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastro_MenuActionPerformed
-        Cadastro frame = new Cadastro();
+        CadCliVIEW frame = new CadCliVIEW();
         frame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnCadastro_MenuActionPerformed
